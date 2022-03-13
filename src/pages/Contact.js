@@ -1,6 +1,22 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_2epned2', 'template_46wdqow', form.current, 'ivLw-nnOrWGcfAsTS')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        form.current.reset()
+    };
+
     return (
         <>
             <div className="my-5">
@@ -9,25 +25,25 @@ const Contact = () => {
             <div className="container contact_div">
                 <div className="row">
                     <div className="col-md-6 col-10 mx-auto">
-                        <form>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter your full name" />
+                        <form ref={form} onSubmit={sendEmail}>
+                            <div className="mb-3">
+                                <label htmlFor="exampleFormControlInput1" className="form-label">Name</label>
+                                <input name="name" type="text" className="form-control" id="exampleFormControlInput1" placeholder="Enter your full name" />
                             </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
-                                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="mobile number" />
+                            <div className="mb-3">
+                                <label htmlFor="exampleFormControlInput1" className="form-label">Phone Number</label>
+                                <input name="number" type="number" className="form-control" id="exampleFormControlInput1" placeholder="mobile number" />
                             </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+                            <div className="mb-3">
+                                <label htmlFor="exampleFormControlInput1" className="form-label">Email address</label>
+                                <input name="email" type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
                             </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <div className="mb-3">
+                                <label htmlFor="exampleFormControlTextarea1" className="form-label">Message</label>
+                                <textarea name="message" className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
-                            <div class="col-12">
-                                <button class="btn btn-outline-primary" type="submit">Submit form</button>
+                            <div className="col-12">
+                                <button className="btn btn-outline-primary" type="submit">Submit form</button>
                             </div>
                         </form>
                     </div>

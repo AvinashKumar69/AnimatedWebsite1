@@ -2,16 +2,17 @@ import React from 'react';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import { Route, Routes } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import Service from './Service';
-import Contact from './Contact';
-import Navbar from './Navbar';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import About from './pages/About';
+import Service from './pages/Service';
+import Contact from './pages/Contact';
+
 
 const App = () => {
   return (
     <>
-    <Navbar />
+      <Navbar />
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route exact path='/about' element={<About />} />

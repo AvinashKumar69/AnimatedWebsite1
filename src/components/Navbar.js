@@ -9,7 +9,7 @@ const Navbar = () => {
                     <div className="col-10 mx-auto">
                         <nav className="navbar navbar-expand-lg navbar-light bg-light">
                             <div className="container-fluid">
-                                <NavLink className="navbar-brand" to="/">DonWarDaddyAVI</NavLink>
+                                <NavLink className="navbar-brand" to="/">Avinash Kumar</NavLink>
                                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span className="navbar-toggler-icon"></span>
                                 </button>
@@ -27,25 +27,7 @@ const Navbar = () => {
                                         <li className="nav-item">
                                             <NavLink className="nav-link" to="/contact">Contact</NavLink>
                                         </li>
-                                        {/* <li className="nav-item dropdown">
-                                            <NavLink className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Dropdown
-                                            </NavLink>
-                                            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <li><NavLink className="dropdown-item" to="#">Action</NavLink></li>
-                                                <li><NavLink className="dropdown-item" to="#">Another action</NavLink></li>
-                                                <li><hr className="dropdown-divider" /></li>
-                                                <li><NavLink className="dropdown-item" to="#">Something else here</NavLink></li>
-                                            </ul>
-                                        </li> */}
-                                        {/* <li className="nav-item">
-                                            <NavLink className="nav-link disabled">Disabled</NavLink>
-                                        </li> */}
                                     </ul>
-                                    {/* <form className="d-flex">
-                                        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                                        <button className="btn btn-outline-success" type="submit">Search</button>
-                                    </form> */}
                                 </div>
                             </div>
                         </nav>

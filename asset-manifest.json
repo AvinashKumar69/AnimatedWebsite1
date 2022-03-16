@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/animatedwebsite1.github.io/static/css/main.a788206d.css",
+    "main.js": "/animatedwebsite1.github.io/static/js/main.df429f70.js",
+    "static/media/about1.jpg": "/animatedwebsite1.github.io/static/media/about1.a17fbba487816e5a9483.jpg",
+    "static/media/Card1.png": "/animatedwebsite1.github.io/static/media/Card1.f4332d3f46d646fd6a3f.png",
+    "static/media/Card2.jpg": "/animatedwebsite1.github.io/static/media/Card2.b4ee3750031a47844992.jpg",
+    "static/media/img1.png": "/animatedwebsite1.github.io/static/media/img1.65a5b83f9e191e820d85.png",
+    "index.html": "/animatedwebsite1.github.io/index.html",
+    "main.a788206d.css.map": "/animatedwebsite1.github.io/static/css/main.a788206d.css.map",
+    "main.df429f70.js.map": "/animatedwebsite1.github.io/static/js/main.df429f70.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a788206d.css",
+    "static/js/main.df429f70.js"
+  ]
+}
